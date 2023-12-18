@@ -1,0 +1,11 @@
+[version]
+current = "0.1.0"
+regex = '\d+\.\d+\.\d+'
+
+[git]
+message_template = "Bump to {new_version}"
+tag_template = "v{new_version}"
+
+[[file]]
+src = "ocr_shell/__init__.py"
+search = "__version__ = '{current_version}'"

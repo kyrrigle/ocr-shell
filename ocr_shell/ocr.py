@@ -24,11 +24,15 @@ import pytesseract
 from ocr_shell import __version__
 
 is_mac = platform.system() == 'Darwin'
+is_windows = platform.system() == 'Windows'
 
 if is_mac:
     from AppKit import NSPasteboard, NSTIFFPboardType
-else:
+elif is_windows:
     import win32clipboard
+else:
+    print("Unspported platform `{}`".format(platform.system()), file=sys.stderr)
+    sys.exit(1)
 
 
 def main():

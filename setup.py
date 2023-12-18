@@ -19,7 +19,7 @@ setup(
     },
     author='Matthew King',
     author_email='kyrrigle@gmail.com',
-    description='A wrapper around tesseract that can be easily called from the command line in an easy to use manner',
+    description='A wrapper around tesseract that can be easily called from the command line on an image from the clipboard',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     license='MIT',
