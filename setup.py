@@ -9,8 +9,6 @@ setup(
         'docopt',
         'Pillow',
         'pytesseract',
-        'pyobjc-framework-Quartz;platform_system=="Darwin"',
-        'pywin32;platform_system=="Windows"',
     ],
     entry_points={
         'console_scripts': [
